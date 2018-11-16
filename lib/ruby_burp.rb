@@ -34,7 +34,6 @@ module RubyBurp
       issue.vulnerability_classifications = RbVulnerabilityClassification.parse(xml_issue.css('vulnerability_classification').text)
       
       issues.push issue
-      break
     end
     
     return issues
