@@ -24,14 +24,10 @@ module RubyBurp
       host = xml_issue.css('host').text
       issue.host = RbHost.new(ip, host)
       
-      # p 'ref'
       issue.references = RbReference.parse(xml_issue.css('references').text)
-      # p 'req'
       issue.request = RbRequest.parse(xml_issue.to_s)
-      # p 'res'
       issue.response = RbResponse.parse(xml_issue.to_s)
-      # p 'cla'
-      issue.vulnerability_classifications = RbVulnerabilityClassification.parse(xml_issue.css('vulnerability_classification').text)
+      issue.vulnerability_classifications = RbVulnerabilityClassification.parse(xml_issue.css('vulnerabilityClassifications').text)
       
       issues.push issue
     end
