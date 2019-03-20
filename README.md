@@ -2,7 +2,6 @@
 It Parses Burp Scanner XML file
 
 ## Table of contents
----
 
 -  [Install](#install)
 -  [Set Up](#set-up)
@@ -10,16 +9,15 @@ It Parses Burp Scanner XML file
 -  [Architecture](#architecture)
 -  [Logging](#logging)
 -  [Programming](#programming)
-  - [Adding New CRUD](#adding-new-crud)
-  - [Authentication](#authentication)
-  - [Authorization](#authorization)
+	- [Adding New CRUD](#adding-new-crud)
+	- [Authentication](#authentication)
+	- [Authorization](#authorization)
 -  [Migration](#migration)
 -  [Internacionalization](#internacionalization)
 -  [Sending Emails](#sending-emails)
 -  [License](#license)
 
 ## Install
----
 
 ### Go
 
@@ -39,7 +37,7 @@ It Parses Burp Scanner XML file
 
 
 ## Set up
----
+
 
 ### Keys
 
@@ -104,7 +102,7 @@ And edit _YOUR_LOCALE.yml_
 
 
 ## Running
----
+
 
 ```
 go run main.go
@@ -128,20 +126,18 @@ go run main.go --help
 
 You can set up the Port and Host binding
 
----
-
 
 ### Architecture
----
+
 MVC
 
 ## Logging
----
+
 utils.LoggerInfo().Println("Logger example")
 
 
 ## Programming
----
+
 
 ### Adding New CRUD
 
@@ -150,13 +146,13 @@ utils.LoggerInfo().Println("Logger example")
 ### Authorization
 
 ## Migration
----
+
 
 ## Internacionalization
----
+
 
 ## Sending Emails
----
+
 
 ## License
----
+
