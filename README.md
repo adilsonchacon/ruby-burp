@@ -5,6 +5,10 @@ It Parses Burp Scanner XML file
 
 -  [Install](#install)
 -  [Set Up](#set-up)
+	- [JWT](#jwt)
+	- [Database](#database)
+	- [Email](#email)
+	- [Application](#application)
 -  [Running](#set-up)
 -  [Architecture](#architecture)
 -  [Logging](#logging)
