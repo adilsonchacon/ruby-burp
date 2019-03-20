@@ -26,13 +26,13 @@ It Parses Burp Scanner XML file
 ### Dependences
 
 ```
-> go get github.com/jinzhu/gorm
-> go get gopkg.in/yaml.v2
-> go get github.com/gorilla/mux
-> go get github.com/dgrijalva/jwt-go
-> go get github.com/satori/go.uuid
-> go get github.com/lib/pq
-> go get golang.org/x/crypto/bcrypt
+$> go get github.com/jinzhu/gorm
+$> go get gopkg.in/yaml.v2
+$> go get github.com/gorilla/mux
+$> go get github.com/dgrijalva/jwt-go
+$> go get github.com/satori/go.uuid
+$> go get github.com/lib/pq
+$> go get golang.org/x/crypto/bcrypt
 ```
 
 
@@ -44,9 +44,9 @@ It Parses Burp Scanner XML file
 The following keys are used by JWT.
 
 ```
-> cd config/keys
-> openssl genrsa -out app.key.rsa 1024
-> openssl rsa -in app.key.rsa -pubout > app.key.rsa.pub
+$> cd config/keys
+$> openssl genrsa -out app.key.rsa 1024
+$> openssl rsa -in app.key.rsa -pubout > app.key.rsa.pub
 ```
 
 ### Database
@@ -54,8 +54,8 @@ The following keys are used by JWT.
 Connect to your database
 
 ```
-> cd config
-> cp database.example.yml database.yml
+$> cd config
+$> cp database.example.yml database.yml
 ```
 
 Edit _database.yml_ and set up your database credentials
@@ -65,8 +65,8 @@ Edit _database.yml_ and set up your database credentials
 Connect to your email provider
 
 ```
-> cd config
-> cp email.example.yml email.yml
+$> cd config
+$> cp email.example.yml email.yml
 ```
 
 Edit _email.yml_ and set up your email credentials
@@ -76,8 +76,8 @@ Edit _email.yml_ and set up your email credentials
 Set up _app.yml_ file for app work pristine
 
 ```
-cd config
-cp app.example.yml app.yml
+$> cd config
+$> cp app.example.yml app.yml
 ```
 
 Edit app.yml and set the following options:
@@ -94,8 +94,8 @@ Edit app.yml and set the following options:
 Words and phrases for internacionalization. You can add your own locales files, but remenber to set up the _app.yml_ configuration file.
 
 ```
-cd config/locales
-cp en.yml YOUR_LOCALE.yml
+$> cd config/locales
+$> cp en.yml YOUR_LOCALE.yml
 ```
 
 And edit _YOUR_LOCALE.yml_
@@ -105,13 +105,13 @@ And edit _YOUR_LOCALE.yml_
 
 
 ```
-go run main.go
+$> go run main.go
 ```
 
 ### Migration
 
 ```
-go run main.go -mode=migrate
+$> go run main.go -mode=migrate
 ```
 
 ### Options
@@ -121,7 +121,7 @@ go run main.go -mode=migrate
 Prints help menu
 
 ```
-go run main.go --help
+$> go run main.go --help
 ```
 
 You can set up the Port and Host binding
