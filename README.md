@@ -43,7 +43,7 @@ $> go get golang.org/x/crypto/bcrypt
 ## Set up
 
 
-### Keys
+### JWT
 
 The following keys are used by JWT.
 
