@@ -28,13 +28,13 @@ It Parses Burp Scanner XML file
 ### Dependences
 
 ```
-go get github.com/jinzhu/gorm
-go get gopkg.in/yaml.v2
-go get github.com/gorilla/mux
-go get github.com/dgrijalva/jwt-go
-go get github.com/satori/go.uuid
-go get github.com/lib/pq
-go get golang.org/x/crypto/bcrypt
+> go get github.com/jinzhu/gorm
+> go get gopkg.in/yaml.v2
+> go get github.com/gorilla/mux
+> go get github.com/dgrijalva/jwt-go
+> go get github.com/satori/go.uuid
+> go get github.com/lib/pq
+> go get golang.org/x/crypto/bcrypt
 ```
 
 
@@ -46,9 +46,9 @@ go get golang.org/x/crypto/bcrypt
 The following keys are used by JWT.
 
 ```
-cd config/keys
-openssl genrsa -out app.key.rsa 1024
-openssl rsa -in app.key.rsa -pubout > app.key.rsa.pub
+> cd config/keys
+> openssl genrsa -out app.key.rsa 1024
+> openssl rsa -in app.key.rsa -pubout > app.key.rsa.pub
 ```
 
 ### Database
@@ -56,8 +56,8 @@ openssl rsa -in app.key.rsa -pubout > app.key.rsa.pub
 Connect to your database
 
 ```
-cd config
-cp database.example.yml database.yml
+> cd config
+> cp database.example.yml database.yml
 ```
 
 Edit _database.yml_ and set up your database credentials
@@ -67,8 +67,8 @@ Edit _database.yml_ and set up your database credentials
 Connect to your email provider
 
 ```
-cd config
-cp email.example.yml email.yml
+> cd config
+> cp email.example.yml email.yml
 ```
 
 Edit _email.yml_ and set up your email credentials
@@ -147,7 +147,7 @@ utils.LoggerInfo().Println("Logger example")
 
 ### Authentication
 
-###Authorization
+### Authorization
 
 ## Migration
 ---
